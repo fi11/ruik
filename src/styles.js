@@ -1,5 +1,5 @@
 import React from 'react';
-import StyleSheet from './_StyleSheet';
+import StyleSheet from './StyleSheet';
 import View from './View';
 
 export const cn = (...args) => {
