@@ -2,13 +2,11 @@ import React from 'react';
 import StyleSheet from './StyleSheet';
 import View from './View';
 
-export const cn = (...args) => {
+const cn = (...args) => {
   return [...args].filter(i => i).join(' ');
 };
 
-export { StyleSheet };
-
-export const styled = (element, styleRules) => {
+const styled = (element, styleRules) => {
   let elementType = typeof element;
 
   if (styleRules === undefined && element && elementType === 'object') {
@@ -49,3 +47,5 @@ export const styled = (element, styleRules) => {
 
   return Wrapper;
 };
+
+export { StyleSheet, styled, cn };
