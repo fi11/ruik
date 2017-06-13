@@ -29,4 +29,8 @@ export default class StyleSheet {
     static getServerSideStyleSheets() {
       return jss.sheets.toString();
     }
+
+    static classnames(...args) {
+      return [...args].filter(i => i).join(' ');
+    }
 };
