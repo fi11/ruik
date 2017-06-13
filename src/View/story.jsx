@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import View from './View';
-import { StyleSheet }from '../styles';
+import { StyleSheet, styled }from '../styles';
 
 const st = StyleSheet.create({
   blackSquare: {
@@ -17,6 +17,16 @@ const st = StyleSheet.create({
   asRows: {
     flexDirection: 'column',
   }
+});
+
+const BlackSquare = styled(View, {
+  width: 40,
+  height: 40,
+  backgroundColor: 'black',
+});
+
+const RedSquare = styled(BlackSquare, {
+  backgroundColor: 'red',
 });
 
 storiesOf('View', module)
@@ -39,4 +49,10 @@ storiesOf('View', module)
       <View styles={[st.blackSquare, st.margin]} />
       <View styles={[st.blackSquare, st.margin]} />
     </View>
+  ))
+  .add('styled', () => (
+    <BlackSquare />
+  ))
+  .add('styled extend', () => (
+    <RedSquare />
   ));
