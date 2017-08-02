@@ -25,7 +25,8 @@
     "clean:commonjs": "rm -rf ./lib",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 9010",
-    "prepublish": "npm run build:commonjs"
+    "prepublish": "npm run build:commonjs",
+    "fmt": "prettier --single-quote --trailing-comma=all --write 'src/**/*.js'"
   },
   "author": "Pavel Silin",
   "license": "MIT",
@@ -47,6 +48,7 @@
     "babel-plugin-transform-strict-mode": "^6.24.1",
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
+    "prettier": "^1.5.3",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
