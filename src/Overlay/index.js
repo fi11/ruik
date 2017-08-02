@@ -1,1 +1,1 @@
-export { default  } from './Overaly';
+export { default } from './Overaly';
