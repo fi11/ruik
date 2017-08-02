@@ -1,3 +1,9 @@
+### Usage
+
+```js
+import View from 'ruik/lib/View';
+````
+
 Base block for layout with flexbox:
 
     <View>

@@ -56,6 +56,7 @@ const RedSquareWithRightBorder = styled(RedSquare, {
 const RedSquareWithLeftBorder = styled(RedSquare, {
   boxShadow: buildShadowBorder('0 0 0 3', '#333'),
 });
+
 const RedSquareWithRightAndLeftBorder = styled(RedSquare, {
   boxShadow: buildShadowBorder('0 3 0', '#333'),
 });
