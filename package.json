@@ -1,6 +1,6 @@
 {
   "name": "ruik",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Kit for create react ui components",
   "main": "lib/index.js",
   "module": "lib/index.js",
